@@ -31,5 +31,5 @@ jobs:
       - run: |
           docker build -t corjen/hello-world:latest .
           docker login -u corjen -p Hopefull@1
-          docker push -u corjen/hello-world:latest
+          docker push corjen/hello-world:latest
 
