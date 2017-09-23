@@ -27,6 +27,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - setup_remote_docker
       - run: |
           docker build -t corjen/hello-world:latest .
           docker login -u corjen -p Hopefull@1
